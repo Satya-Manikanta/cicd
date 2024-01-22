@@ -17,4 +17,9 @@ public class PipelineApplication {
 	public String hello() {
 		return "Hello from CI-CD Pipeline Application";
 	}
+
+	@GetMapping("/action")
+	public String action() {
+		return "This is to trigger the actions in Github";
+	}
 }
